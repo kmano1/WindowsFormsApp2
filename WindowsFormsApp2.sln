@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30503.244
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApp2", "WindowsFormsApp2\WindowsFormsApp2.csproj", "{DB47560D-03D2-429B-AAE6-54BCE487D4BD}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "ClipboardTranslateSetup", "ClipboardTranslateSetup\ClipboardTranslateSetup.vdproj", "{609C45B1-9C31-4BF9-83D0-447AB0F66F09}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DB47560D-03D2-429B-AAE6-54BCE487D4BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB47560D-03D2-429B-AAE6-54BCE487D4BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB47560D-03D2-429B-AAE6-54BCE487D4BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB47560D-03D2-429B-AAE6-54BCE487D4BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{609C45B1-9C31-4BF9-83D0-447AB0F66F09}.Debug|Any CPU.ActiveCfg = Debug
+		{609C45B1-9C31-4BF9-83D0-447AB0F66F09}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FE207E02-0680-4605-88D2-DF90015A0ACE}
+	EndGlobalSection
+EndGlobal
