@@ -40,7 +40,11 @@ namespace WindowsFormsApp2
                     Regex reg = new Regex("\r\n(?![A-Z*])");
                     getText = reg.Replace(getText, " ");
                     getText = HttpUtility.UrlEncode(getText);
-                    s = $"https://translate.google.co.jp/?hl=ja&sl=en&tl=ja&text={getText}&op=translate";
+                    string sltl = 英日ToolStripMenuItem.Checked ? "sl=en&tl=ja" :
+                                 ベトナム語日本語ToolStripMenuItem.Checked ? "sl=vi&tl=ja" :
+                                 中国語日本語ToolStripMenuItem.Checked ? "sl=zh-CN&tl=ja" :
+                                 "sl=en&tl=ja";
+                    s = $"https://translate.google.co.jp/?{sltl}&text={getText}&op=translate";
                 }
 
                 if (InvokeRequired) // CheckAccess returns true if you're on the dispatcher thread
@@ -50,6 +54,29 @@ namespace WindowsFormsApp2
                 }
                 webBrowser1.Url = new Uri(s);
             };
+
+        }
+
+        private void 英日ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            英日ToolStripMenuItem.Checked = true;
+            中国語日本語ToolStripMenuItem.Checked = false;
+            ベトナム語日本語ToolStripMenuItem.Checked = false;
+        }
+
+        private void ベトナム語日本語ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            英日ToolStripMenuItem.Checked = false;
+            中国語日本語ToolStripMenuItem.Checked = false;
+            ベトナム語日本語ToolStripMenuItem.Checked = true;
+
+        }
+
+        private void 中国語日本語ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            英日ToolStripMenuItem.Checked = false;
+            中国語日本語ToolStripMenuItem.Checked = true ;
+            ベトナム語日本語ToolStripMenuItem.Checked = false;
 
         }
     }
