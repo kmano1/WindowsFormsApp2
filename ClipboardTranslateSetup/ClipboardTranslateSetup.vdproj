@@ -34,12 +34,6 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_63893F601520E2E2D8508CFB3C1EAD36"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_35F99446516A417A962BECA3D5C4BF11"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -47,6 +41,12 @@
         {
         "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_4F95F0F4342CE669CFBC1604C4EC9280"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_63893F601520E2E2D8508CFB3C1EAD36"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -74,6 +74,14 @@
             "PrerequisitesLocation" = "2:1"
             "Url" = "8:"
             "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.7.2"
+                    }
+                }
             }
         }
         "Release"
@@ -254,15 +262,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:ClipboardTranslator"
-        "ProductCode" = "8:{E737AEEB-5093-4EAE-8F74-8B3329BDFE70}"
-        "PackageCode" = "8:{2EB368F8-E862-4AB3-A4C4-A6C462E13C3C}"
+        "ProductCode" = "8:{4F47DD25-375F-411A-A87B-ED95184AAE4E}"
+        "PackageCode" = "8:{D63DF6A8-157D-488A-A080-9F0BDA845343}"
         "UpgradeCode" = "8:{E5CEC47C-9E36-4AD5-B7ED-30933C8315C0}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
-        "RemovePreviousVersions" = "11:FALSE"
+        "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
-        "ProductVersion" = "8:1.0.0"
+        "ProductVersion" = "8:1.1.0"
         "Manufacturer" = "8:Default Company Name"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
@@ -804,7 +812,7 @@
         {
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_35F99446516A417A962BECA3D5C4BF11"
             {
-            "SourcePath" = "8:..\\WindowsFormsApp2\\obj\\Debug\\ClipboardTranslator.exe"
+            "SourcePath" = "8:..\\WindowsFormsApp2\\obj\\Release\\ClipboardTranslator.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_04D9368487A04046B35F3A75251CD4CF"
