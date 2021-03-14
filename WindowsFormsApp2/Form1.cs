@@ -21,7 +21,6 @@ namespace WindowsFormsApp2
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            toolStripStatusLabel1.Text = "start!";
             ClipboardSetup();
         }
 
@@ -43,6 +42,7 @@ namespace WindowsFormsApp2
                     string sltl = 英日ToolStripMenuItem.Checked ? "sl=en&tl=ja" :
                                  ベトナム語日本語ToolStripMenuItem.Checked ? "sl=vi&tl=ja" :
                                  中国語日本語ToolStripMenuItem.Checked ? "sl=zh-CN&tl=ja" :
+                                 日本語ベトナム語ToolStripMenuItem.Checked ? "sl=ja&tl=vi" :
                                  "sl=en&tl=ja";
                     s = $"https://translate.google.co.jp/?{sltl}&text={getText}&op=translate";
                 }
@@ -59,24 +59,36 @@ namespace WindowsFormsApp2
 
         private void 英日ToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            resetAllLangCb();
             英日ToolStripMenuItem.Checked = true;
-            中国語日本語ToolStripMenuItem.Checked = false;
-            ベトナム語日本語ToolStripMenuItem.Checked = false;
         }
 
         private void ベトナム語日本語ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            英日ToolStripMenuItem.Checked = false;
-            中国語日本語ToolStripMenuItem.Checked = false;
+            resetAllLangCb();
             ベトナム語日本語ToolStripMenuItem.Checked = true;
 
         }
 
         private void 中国語日本語ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            英日ToolStripMenuItem.Checked = false;
+            resetAllLangCb();
             中国語日本語ToolStripMenuItem.Checked = true ;
+
+        }
+
+        private void 日本語ベトナム語ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            resetAllLangCb();
+            日本語ベトナム語ToolStripMenuItem.Checked = true;
+
+        }
+        private void resetAllLangCb()
+        {
+            英日ToolStripMenuItem.Checked = false;
+            中国語日本語ToolStripMenuItem.Checked = false;
             ベトナム語日本語ToolStripMenuItem.Checked = false;
+            日本語ベトナム語ToolStripMenuItem.Checked = false;
 
         }
     }
